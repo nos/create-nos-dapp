@@ -1,0 +1,11 @@
+# Standard node stuff
+node_modules/
+yarn-error.log
+
+# Parcel stuff
+dist/
+build/
+.cache/
+
+# Jest stuff
+coverage/

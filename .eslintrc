@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "prettier"
+  ],
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/forbid-prop-types": [1, { "forbid": ["any"] }]
+  }
+}

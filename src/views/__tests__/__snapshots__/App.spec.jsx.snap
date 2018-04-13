@@ -5,19 +5,19 @@ exports[`Components Header should render 1`] = `
   class="App-App-0-1-1"
 >
   <header
-    class="Header-header-0-1-3"
+    class="Header-header-0-1-4"
   >
     <h1
-      class="Header-title-0-1-4"
+      class="Header-title-0-1-5"
     >
       A nOS dApp starter-kit!
     </h1>
     <div
-      class="SpinningLogo-logoContainer-0-1-5"
+      class="SpinningLogo-logoContainer-0-1-6"
     >
       <img
         alt="nOS logo"
-        class="SpinningLogo-nosLogo-0-1-6"
+        class="SpinningLogo-nosLogo-0-1-7"
         src="test-file-stub"
       />
     </div>
@@ -31,5 +31,38 @@ exports[`Components Header should render 1`] = `
     </code>
      and save to reload.
   </p>
+  <p
+    class="App-intro-0-1-2"
+  >
+    Or test out the following demo functions!
+  </p>
+  <hr
+    class="App-lineBreak-0-1-3"
+  />
+  <button
+    class="NOSActions-button-0-1-8"
+  >
+    Get Address
+  </button>
+  <button
+    class="NOSActions-button-0-1-8"
+  >
+    Get NEO Balance
+  </button>
+  <button
+    class="NOSActions-button-0-1-8"
+  >
+    Claim Gas
+  </button>
+  <button
+    class="NOSActions-button-0-1-8"
+  >
+    TestInvoke (NeoAuth)
+  </button>
+  <button
+    class="NOSActions-button-0-1-8"
+  >
+    GetStorage (NeoBlog)
+  </button>
 </div>
 `;

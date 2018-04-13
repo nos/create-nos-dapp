@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components NOSActions should render 1`] = `
+Array [
+  <button
+    class="NOSActions-button-0-1-1"
+  >
+    Get Address
+  </button>,
+  <button
+    class="NOSActions-button-0-1-1"
+  >
+    Get NEO Balance
+  </button>,
+  <button
+    class="NOSActions-button-0-1-1"
+  >
+    Claim Gas
+  </button>,
+  <button
+    class="NOSActions-button-0-1-1"
+  >
+    TestInvoke (NeoAuth)
+  </button>,
+  <button
+    class="NOSActions-button-0-1-1"
+  >
+    GetStorage (NeoBlog)
+  </button>,
+]
+`;

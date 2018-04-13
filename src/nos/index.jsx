@@ -17,7 +17,7 @@ const { Provider, Consumer } = React.createContext({
     nos.testInvoke(scriptHash, operation, args),
   invoke: (scriptHash, operation, args) =>
     nos.invoke(scriptHash, operation, args),
-  getStorage: ({ scriptHash, key, encode = true }) =>
+  getStorage: (scriptHash, key, encode = true) =>
     nos.getStorage(scriptHash, key, { encode })
 });
 

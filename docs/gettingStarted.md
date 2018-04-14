@@ -1,4 +1,4 @@
-# Getting started
+# Getting Started
 * [Installation](#installation)
 * [Using the nOS API](#using-the-nos-api)
 * [Using `injectNOS`](#using-injectnos)

@@ -17,10 +17,11 @@
   </a>
 </p>
 
+## Getting started
+To get started, go to our [Getting Started](./docs/gettingStarted.md) guide. Afterwards you can check out the nOS [API documentation](https://github.com/nos/client/blob/master/docs/api.md)
+
 ## Purpose
 The goal of this project is to provide a quickstart for creating nOS dApps with React and various dependencies already installed and configured.
-
-To get started, go to our [Getting Started](./docs/gettingStarted.md) guide. Afterwards you can check out the nOS [API documentation](https://github.com/nos/client/blob/master/docs/api.md)
 
 In this repo you can find NEO specific tooling:
 * nOS functions exposed in a store

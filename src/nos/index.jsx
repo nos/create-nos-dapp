@@ -17,8 +17,8 @@ const { Provider, Consumer } = React.createContext({
     nos.testInvoke(scriptHash, operation, args),
   invoke: (scriptHash, operation, args) =>
     nos.invoke(scriptHash, operation, args),
-  getStorage: (scriptHash, key, encode = true) =>
-    nos.getStorage(scriptHash, key, { encode })
+  getStorage: (scriptHash, key, options = { encode: true }) =>
+    nos.getStorage(scriptHash, key, options)
 });
 
 const injectNOS = Component => props => (

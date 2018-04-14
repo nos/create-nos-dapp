@@ -20,17 +20,20 @@
 ## Purpose
 The goal of this project is to provide a quickstart for creating nOS dApps with React and various dependencies already installed and configured.
 
-In this repo you can find:
+To get started, go to our [Getting Started](./docs/gettingStarted.md) guide. Afterwards you can check out the nOS [API documentation](https://github.com/nos/client/blob/master/docs/api.md)
+
+In this repo you can find NEO specific tooling:
 * nOS functions exposed in a store
 * neon-js, providing extra NEO functionality
+
+Also general frameworks and tooling:
 * React, our framework of choice
 * JSS, CSS in JSS
 * Jest, a testing framework
-* Babel, transpiling React and ES6 made easy
-* Parcel, a kickass bundler
+* Babel and Parcel, transpiling and compiling
 * Prettier and ESLint, kickass linting support
 
-Also some plugins:
+Some plugins:
 * vendor prefixing, camelCase and global styling JSS plugins
 * env and React Babel presets
 * babel-polyfill

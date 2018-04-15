@@ -85,4 +85,5 @@ react-stack-boilerplate
 ```
 
 ## Known issues
-Build assets to dedicated subdirectory https://github.com/parcel-bundler/parcel/issues/233
+ * Build assets to dedicated subdirectory https://github.com/parcel-bundler/parcel/issues/233
+ * Bundler sometimes freezes on Windows https://github.com/parcel-bundler/parcel/issues/900

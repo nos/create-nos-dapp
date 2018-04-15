@@ -1,7 +1,7 @@
 import React from "react";
 import injectSheet from "react-jss";
 import PropTypes from "prop-types";
-import { injectNOS } from "../../nos";
+import { injectNOS, NOSTypes } from "../../nos";
 
 const styles = {
   button: {
@@ -104,7 +104,7 @@ class NOSActions extends React.Component {
 
 NOSActions.propTypes = {
   classes: PropTypes.objectOf(PropTypes.any).isRequired,
-  nos: PropTypes.objectOf(PropTypes.any).isRequired
+  nos: NOSTypes.isRequired
 };
 
 export default injectNOS(injectSheet(styles)(NOSActions));

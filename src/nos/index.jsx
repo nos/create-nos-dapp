@@ -2,24 +2,35 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const nos = window.NOS && window.NOS.V1 ? window.NOS.V1 : {};
+const exists = !!window.NOS && !!window.NOS.V1;
 
 const { Provider, Consumer } = React.createContext({
   // Check whether nOS exists in your window
-  exists: !!window.NOS && !!window.NOS.V1,
+  exists,
 
   // Wallet Actions
-  getAddress: () => nos.getAddress(),
-  getBalance: scriptHash => nos.getBalance(scriptHash),
-  claimGas: () => nos.claimGas(),
-  send: (asset, amount, receiver) => nos.send(asset, amount, receiver),
+  getAddress: options => (exists ? nos.getAddress() : options.fallback()),
+  getBalance: (scriptHash, options) =>
+    exists ? nos.getBalance(scriptHash) : options.fallback(scriptHash),
+  claimGas: options => (exists ? nos.claimGas() : options.fallback()),
+  send: (asset, amount, receiver, options) =>
+    exists
+      ? nos.send(asset, amount, receiver)
+      : options.fallback(asset, amount, receiver),
 
   // Smart Contract Actions
-  testInvoke: (scriptHash, operation, args) =>
-    nos.testInvoke(scriptHash, operation, args),
-  invoke: (scriptHash, operation, args) =>
-    nos.invoke(scriptHash, operation, args),
+  testInvoke: (scriptHash, operation, args, options) =>
+    exists
+      ? nos.testInvoke(scriptHash, operation, args)
+      : options.fallback(scriptHash, operation, args),
+  invoke: (scriptHash, operation, args, options) =>
+    exists
+      ? nos.invoke(scriptHash, operation, args)
+      : options.fallback(scriptHash, operation, args),
   getStorage: (scriptHash, key, options = { encode: true }) =>
-    nos.getStorage(scriptHash, key, options)
+    exists
+      ? nos.getStorage(scriptHash, key, options)
+      : options.fallback(scriptHash, key, options)
 });
 
 const injectNOS = Component => props => (

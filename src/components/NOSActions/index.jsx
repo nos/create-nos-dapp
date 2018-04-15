@@ -10,26 +10,33 @@ const styles = {
   }
 };
 
+const fallback = () => "You're not working in nOS!";
+
 class NOSActions extends React.Component {
-  handleGetAddress = async () => alert(await this.props.nos.getAddress());
+  handleGetAddress = async () =>
+    alert(await this.props.nos.getAddress({ fallback }));
 
   handleClaimGas = () =>
     this.props.nos
-      .claimGas()
+      .claimGas({ fallback })
       .then(alert)
       .catch(alert);
 
   handleGetBalance = async scriptHash =>
-    alert(await this.props.nos.getBalance(scriptHash));
+    alert(await this.props.nos.getBalance(scriptHash, { fallback }));
 
   handleTestInvoke = async (scriptHash, operation, args) =>
-    alert(await this.props.nos.testInvoke(scriptHash, operation, args));
+    alert(
+      await this.props.nos.testInvoke(scriptHash, operation, args, { fallback })
+    );
 
   handleInvoke = async (scriptHash, operation, args) =>
-    alert(await this.props.nos.testInvoke(scriptHash, operation, args));
+    alert(
+      await this.props.nos.testInvoke(scriptHash, operation, args, { fallback })
+    );
 
   handleGetStorage = async (scriptHash, key) =>
-    alert(await this.props.nos.getStorage(scriptHash, key));
+    alert(await this.props.nos.getStorage(scriptHash, key, { fallback }));
 
   render() {
     const { classes } = this.props;

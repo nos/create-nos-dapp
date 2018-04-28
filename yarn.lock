@@ -92,7 +92,7 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@cityofzion/neon-js@^3.6.2":
+"@cityofzion/neon-js@3.6.2":
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/@cityofzion/neon-js/-/neon-js-3.6.2.tgz#a27ffda9defae273786fd150b47b1b402f703f10"
   dependencies:
@@ -109,6 +109,12 @@
     secure-random "^1.1.1"
     semver "^5.5.0"
     wif "^2.0.6"
+
+"@nosplatform/api-functions@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@nosplatform/api-functions/-/api-functions-0.1.2.tgz#d637c51b425a3842c9ae361536c2d8e94c8ad89d"
+  dependencies:
+    prop-types "15.6.1"
 
 "@types/node@*":
   version "9.6.1"
@@ -2172,12 +2178,6 @@ enzyme@3.3.0:
     object.values "^1.0.4"
     raf "^3.4.0"
     rst-selector-parser "^2.2.3"
-
-errno@~0.1.7:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/errno/-/errno-0.1.7.tgz#4684d71779ad39af177e3f007996f7c67c852618"
-  dependencies:
-    prr "~1.0.1"
 
 error-ex@^1.2.0:
   version "1.3.1"
@@ -4693,9 +4693,9 @@ pako@~1.0.5:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.6.tgz#0101211baa70c4bca4a0f63f2206e97b7dfaf258"
 
-parcel-bundler@1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/parcel-bundler/-/parcel-bundler-1.7.0.tgz#8c2512615fd602d2f39bd97bfd128f8fe524b321"
+parcel-bundler@1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/parcel-bundler/-/parcel-bundler-1.7.1.tgz#0c5335b9d3946698c1eb7bc282c05c0007eb12b9"
   dependencies:
     babel-code-frame "^6.26.0"
     babel-core "^6.25.0"
@@ -4735,7 +4735,7 @@ parcel-bundler@1.7.0:
     postcss-value-parser "^3.3.0"
     posthtml "^0.11.2"
     posthtml-parser "^0.4.0"
-    posthtml-render "^1.1.0"
+    posthtml-render "^1.1.3"
     resolve "^1.4.0"
     semver "^5.4.1"
     serialize-to-js "^1.1.1"
@@ -4746,7 +4746,6 @@ parcel-bundler@1.7.0:
     tomlify-j0.4 "^3.0.0"
     uglify-es "^3.2.1"
     v8-compile-cache "^1.1.0"
-    worker-farm "^1.5.2"
     ws "^4.0.0"
 
 parse-asn1@^5.0.0:
@@ -5138,6 +5137,10 @@ posthtml-render@^1.1.0, posthtml-render@^1.1.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/posthtml-render/-/posthtml-render-1.1.2.tgz#1755717c3ad12f4e6d8846767fa2f0bafdd7f33f"
 
+posthtml-render@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/posthtml-render/-/posthtml-render-1.1.3.tgz#53e91c3debd0e7443704efa299329e1e10867f0e"
+
 posthtml@^0.11.2, posthtml@^0.11.3:
   version "0.11.3"
   resolved "https://registry.yarnpkg.com/posthtml/-/posthtml-0.11.3.tgz#17ea2921b0555b7455f33c977bd16d8b8cb74f27"
@@ -5202,10 +5205,6 @@ prop-types@15.6.1, prop-types@^15.5.8, prop-types@^15.6.0:
 proto-list@~1.2.1:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/proto-list/-/proto-list-1.2.4.tgz#212d5bfe1318306a420f6402b8e26ff39647a849"
-
-prr@~1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/prr/-/prr-1.0.1.tgz#d3fc114ba06995a45ec6893f484ceb1d78f5f476"
 
 pseudomap@^1.0.1, pseudomap@^1.0.2:
   version "1.0.2"
@@ -6603,12 +6602,6 @@ wordwrap@~0.0.2:
 wordwrap@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
-
-worker-farm@^1.5.2:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/worker-farm/-/worker-farm-1.6.0.tgz#aecc405976fab5a95526180846f0dba288f3a4a0"
-  dependencies:
-    errno "~0.1.7"
 
 wrap-ansi@^2.0.0:
   version "2.1.0"

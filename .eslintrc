@@ -14,6 +14,7 @@
   ],
   "rules": {
     "prettier/prettier": "error",
-    "react/forbid-prop-types": [1, { "forbid": ["any"] }]
+    "react/forbid-prop-types": [1, { "forbid": ["any"] }],
+    "max-len": ["error", {"code": 100, "ignoreUrls": true}]
   }
 }

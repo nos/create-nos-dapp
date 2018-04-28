@@ -23,12 +23,7 @@ const styles = {
 
 const SpinningLogo = ({ classes }) => (
   <div className={classes.logoContainer}>
-    <img
-      src={nosLogo}
-      className={classes.nosLogo}
-      alt="nOS logo"
-      key="nosLogo"
-    />
+    <img src={nosLogo} className={classes.nosLogo} alt="nOS logo" key="nosLogo" />
   </div>
 );
 

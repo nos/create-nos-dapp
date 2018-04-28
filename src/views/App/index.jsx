@@ -30,8 +30,7 @@ const App = ({ classes }) => (
   <div className={classes.App}>
     <Header title="A nOS dApp starter-kit!" />
     <p className={classes.intro}>
-      To get started, edit <code>src/views/App/index.js</code> and save to
-      reload.
+      To get started, edit <code>src/views/App/index.js</code> and save to reload.
     </p>
     <p className={classes.intro}>Or test out the following demo functions!</p>
     <hr className={classes.lineBreak} />

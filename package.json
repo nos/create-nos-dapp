@@ -16,15 +16,12 @@
     "@babel/core": "^7.0.0-beta.46",
     "@babel/polyfill": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.46",
-    "async": "^2.6.0",
     "chalk": "^2.4.1",
-    "commander": "^2.15.1",
     "execa": "^0.10.0",
     "figlet": "^1.2.0",
     "fs-extra": "^5.0.0",
     "inquirer": "^5.2.0",
-    "rimraf": "^2.6.2",
-    "shelljs": "^0.8.1"
+    "rimraf": "^2.6.2"
   },
   "repository": {
     "type": "git",

@@ -6,7 +6,7 @@
     "build": "",
     "precommit": "yarn lint",
     "lint": "eslint 'src/**/*.js*'",
-    "start": "parcel src/index.html",
+    "start": "parcel src/index.html --no-hmr",
     "test": "jest --all --verbose --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "test:local": "jest --all --verbose --coverage"
   },

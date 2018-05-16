@@ -6,8 +6,8 @@ import install from "./install";
 
 export default function createApp(answers) {
   const projectName = answers.name;
-  const directory = path.resolve(process.cwd() + "\\" + projectName);
-  const source = path.resolve(__dirname, ("..\\packages\\" + answers.type));
+  const directory = path.resolve(process.cwd() + "/" + projectName);
+  const source = path.resolve(__dirname, ("../packages/" + answers.type));
 
   if (!fs.existsSync(directory)){
     fs.mkdirSync(directory);

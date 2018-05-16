@@ -2,30 +2,32 @@
 
 import "@babel/polyfill";
 
-const inquirer = require('inquirer');
-const chalk = require('chalk');
+import inquirer from 'inquirer';
+import chalk from 'chalk';
 
 import createApp from "./createApp";
+import ascii from "./ascii";
+
 import { questions } from "./questions";
-import { showText } from "./bigtext";
 
-const main = () => {
-  inquirer.prompt(questions).then(answers => {
+const main = async () => {
+  const answers = await inquirer.prompt(questions);
 
-    // Any other answer than the current existing starter kits
-    if(answers.type === 'others (coming soon..)') {
-      console.log(chalk.blue('Other starter kits are coming soon.. Hang tight!'));
-      return main();
-    }
+  // Any other answer than the current existing starter kits
+  if(answers.type === 'others (coming soon..)') {
+    console.log(chalk.blue('Other starter kits are coming soon.. Hang tight!'));
+    return main();
+  }
 
-    // Answer: ReactJS
-    if(answers.type === 'reactjs') {
-      createApp(answers);
-    }
-  });
+  // Answer: ReactJS
+  if(answers.type === 'reactjs') {
+    createApp(answers);
+  } else { // If answer doesn't correspond to any command
+    process.exit(1);
+  }
 };
 
-showText("nOS dApp Starter Kit!")
+ascii("nOS dApp Starter Kit")
   .then(result => {
     console.log(result);
     main();

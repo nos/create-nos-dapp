@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nos/dapp-starter-kit.git"
+    "url": "git+https://github.com/nos/create-nos-dapp.git"
   },
   "license": "MIT",
   "keywords": [
@@ -28,9 +28,9 @@
   ],
   "author": "nOS <contact@nos.io>",
   "bugs": {
-    "url": "https://github.com/nos/dapp-starter-kit/issues"
+    "url": "https://github.com/nos/create-nos-dapp/issues"
   },
-  "homepage": "https://github.com/nos/dapp-starter-kit#readme",
+  "homepage": "https://github.com/nos/create-nos-dapp#readme",
   "dependencies": {
     "@cityofzion/neon-js": "3.6.2",
     "@nosplatform/api-functions": "0.1.3",

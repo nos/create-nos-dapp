@@ -25,22 +25,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nos/dapp-starter-kit.git"
+    "url": "git+https://github.com/nos/create-nos-dapp.git"
   },
   "keywords": [
     "nOS",
     "NEO",
     "Blockhain",
-    "React",
-    "Parcel",
-    "JSS",
-    "JS",
-    "HTML",
+    "CLI",
     "starter"
   ],
   "author": "nOS <contact@nos.io>",
   "bugs": {
-    "url": "https://github.com/nos/dapp-starter-kit/issues"
+    "url": "https://github.com/nos/create-nos-dapp/issues"
   },
-  "homepage": "https://github.com/nos/dapp-starter-kit#readme"
+  "homepage": "https://github.com/nos/create-nos-dapp#readme"
 }

@@ -7,10 +7,7 @@ const ascii = (message, font = "Standard") => new Promise((resolve, reject) => {
     horizontalLayout: 'default',
     verticalLayout: 'default'
   }, (err, data) => {
-    if (err) {
-      console.log('Something went wrong...');
-      reject(err);
-    }
+    if (err) reject(err);
     resolve(data);
   }));
 });

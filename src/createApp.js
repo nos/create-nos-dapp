@@ -13,8 +13,10 @@ const createApp = async answers => {
     fs.mkdirSync(directory);
     console.log(chalk.green.bold(`Success: Created new project folder ${projectName}`));
   } else {
-    console.log(chalk.red.bold(`Project folder already exists: ${directory}`));
-    process.exit(1);
+    // TODO: split up questions and show error + return to the folder question
+    // console.log(chalk.red.bold(`Error: Project folder already exists: ${directory}`));
+    // return main();
+    throw new Error(`Project folder already exists: ${directory}`)
   }
 
   try {
@@ -31,8 +33,7 @@ const createApp = async answers => {
   } catch(e) {
     console.log(chalk.red.bold(`Something went wrong during copying over the project or installing the dependencies`));
     console.log(chalk.red.bold(`Please check the console output and report it at 'https://github.com/nos/create-nos-dapp'`));
-    console.log(e);
-    process.exit(1);
+    throw new Error(e);
   }
 };
 

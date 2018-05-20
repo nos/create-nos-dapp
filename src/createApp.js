@@ -27,8 +27,7 @@ const createApp = async answers => {
     console.log(chalk.green.bold('Success!'));
     console.log(chalk.green.bold(`To run your dApp, execute:`));
     console.log(chalk.green.bold(`1. 'cd ${projectName}'`));
-    console.log(chalk.green.bold(`2. 'npm install' or 'yarn install'`));
-    console.log(chalk.green.bold(`3. 'npm start' or 'yarn start'`));
+    console.log(chalk.green.bold(`2. 'npm start' or 'yarn start'`));
     console.log(chalk.green.bold(`And finally, browse to your dApp within the nOS client at - localhost:1234'`));
   } catch(e) {
     console.log(chalk.red.bold(`Something went wrong during copying over the project or installing the dependencies`));

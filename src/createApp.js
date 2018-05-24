@@ -1,13 +1,16 @@
 import fs from "fs-extra";
 import chalk from "chalk";
+import inquirer from "inquirer";
 import path from "path";
 
 import install from "./install";
+import { questions } from "./questions";
 
-const createApp = async answers => {
+const createApp = async type => {
+  const answers = await inquirer.prompt(questions[1]);
   const projectName = answers.name;
   const directory = path.resolve(process.cwd(), projectName);
-  const source = path.resolve(__dirname, "..", "packages", answers.type);
+  const source = path.resolve(__dirname, "..", "packages", type);
 
   if (!fs.existsSync(directory)){
     fs.mkdirSync(directory);

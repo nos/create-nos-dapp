@@ -10,7 +10,7 @@ import ascii from "./ascii";
 import pkg from "../package";
 
 const createNosDapp = async () => {
-  const asciiText = await ascii("nOS dApp Starter Kit");
+  const asciiText = await ascii("create nOS dApp");
   console.log(asciiText);
 
   const notifier = updateNotifier({ pkg, updateCheckInterval: 0 });

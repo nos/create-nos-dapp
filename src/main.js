@@ -5,7 +5,7 @@ import createApp from "./createApp";
 import { questions } from "./questions";
 
 const main = async () => {
-  const answers = await inquirer.prompt(questions);
+  const answers = await inquirer.prompt(questions[0]);
 
   // Any other answer than the current existing starter kits
   if(answers.type === 'others (coming soon..)') {
@@ -14,11 +14,11 @@ const main = async () => {
   }
 
   // Answer: ReactJS
-  if(answers.type === 'reactjs') {
-    return createApp(answers);
-  } else { // If answer doesn't correspond to any command
-    throw new Error('An incorrect answer was given, please try again');
+  if(answers.type === 'react') {
+    return createApp(answers.type);
   }
+
+  throw new Error('An incorrect answer was given, please try again');
 };
 
 export default main;

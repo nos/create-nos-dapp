@@ -17,7 +17,7 @@ const main = async () => {
   if(answers.type === 'reactjs') {
     return createApp(answers);
   } else { // If answer doesn't correspond to any command
-    process.exit(1);
+    throw new Error('An incorrect answer was given, please try again');
   }
 };
 

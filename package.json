@@ -21,26 +21,23 @@
     "figlet": "^1.2.0",
     "fs-extra": "^5.0.0",
     "inquirer": "^5.2.0",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "update-notifier": "^2.5.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nos/dapp-starter-kit.git"
+    "url": "git+https://github.com/nos/create-nos-dapp.git"
   },
   "keywords": [
     "nOS",
     "NEO",
     "Blockhain",
-    "React",
-    "Parcel",
-    "JSS",
-    "JS",
-    "HTML",
+    "CLI",
     "starter"
   ],
   "author": "nOS <contact@nos.io>",
   "bugs": {
-    "url": "https://github.com/nos/dapp-starter-kit/issues"
+    "url": "https://github.com/nos/create-nos-dapp/issues"
   },
-  "homepage": "https://github.com/nos/dapp-starter-kit#readme"
+  "homepage": "https://github.com/nos/create-nos-dapp#readme"
 }

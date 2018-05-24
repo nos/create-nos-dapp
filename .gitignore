@@ -12,3 +12,6 @@ build/
 
 # Jest stuff
 coverage/
+
+node_modules/
+

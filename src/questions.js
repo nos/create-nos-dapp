@@ -4,22 +4,17 @@ export const questions = [
     name: 'type',
     message: 'Which starter kit would you like to generate?',
     choices: ['ReactJS', 'Others (Coming soon..)'],
-    filter: function(val) {
-      return val.toLowerCase();
-    }
+    filter: val => val.toLowerCase()
   },
   {
     type: 'input',
     name: 'name',
     message: "How would you like to call your dApp?",
     default: "My-nOS-dApp",
-    validate: function(value) {
-      const pass = value.match(
+    validate: value => {
+      if (value.match(
         /^[a-zA-Z_\-]+$/
-      );
-      if (pass) {
-        return true;
-      }
+      )) return true;
       return 'Please enter a valid project name';
     }
   },

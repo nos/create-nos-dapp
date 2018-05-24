@@ -2,33 +2,31 @@
 
 import "@babel/polyfill";
 
-const inquirer = require('inquirer');
-const chalk = require('chalk');
+import chalk from "chalk";
+import updateNotifier from "update-notifier"
 
-import createApp from "./createApp";
-import { questions } from "./questions";
-import { showText } from "./bigtext";
+import main from "./main";
+import ascii from "./ascii";
+import pkg from "../package";
 
-const main = () => {
-  inquirer.prompt(questions).then(answers => {
+const createNosDapp = async () => {
+  const asciiText = await ascii("nOS dApp Starter Kit");
+  console.log(asciiText);
 
-    // Any other answer than the current existing starter kits
-    if(answers.type === 'others (coming soon..)') {
-      console.log(chalk.blue('Other starter kits are coming soon.. Hang tight!'));
-      return main();
-    }
+  const notifier = updateNotifier({ pkg, updateCheckInterval: 0 });
 
-    // Answer: ReactJS
-    if(answers.type === 'reactjs') {
-      createApp(answers);
-    }
-  });
+  if (notifier.update) {
+    console.log(chalk.green.bold(`Update available!`));
+    console.log(chalk.green.bold(`Please update to the latest version (${notifier.update.latest}) to continue`));
+    console.log(chalk.green.bold('You can do this using \'npm i -g @nosplatform/create-nos-dapp\' or \'yarn global add @nosplatform/create-nos-dapp\' '));
+    notifier.notify();
+    process.exit(0);
+  }
+
+  await main();
 };
 
-showText("nOS dApp Starter Kit!")
-  .then(result => {
-    console.log(result);
-    main();
-  })
-  .catch(err => console.log(err));
+createNosDapp()
+  .then(() => console.log(chalk.green.bold('---')))
+  .catch(err=> console.log(chalk.red.bold(err)));
 

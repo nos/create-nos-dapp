@@ -3,19 +3,19 @@
 import "@babel/polyfill";
 
 import chalk from "chalk";
-import updateNotifier from "update-notifier"
 
-import main from "./main";
-import ascii from "./utils/ascii";
-import notifyUpdate from "./utils/updateNotifier";
+import { ascii, updateNotifier } from "./utils";
+import { getType, getName } from "./steps";
 
 try {
   (async () => {
     const asciiText = await ascii("create nOS dApp");
     console.log(chalk.green(asciiText));
-    notifyUpdate();
-    await main();
-    console.log(chalk.green.bold('---'));
+
+    updateNotifier();
+
+    const type = await getType();
+    await getName(type);
   })();
 } catch (err) {
   console.log(chalk.red.bold(err));

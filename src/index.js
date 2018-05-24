@@ -6,27 +6,18 @@ import chalk from "chalk";
 import updateNotifier from "update-notifier"
 
 import main from "./main";
-import ascii from "./ascii";
-import pkg from "../package";
+import ascii from "./utils/ascii";
+import notifyUpdate from "./utils/updateNotifier";
 
-const createNosDapp = async () => {
-  const asciiText = await ascii("create nOS dApp");
-  console.log(chalk.green(asciiText));
-
-  const notifier = updateNotifier({ pkg, updateCheckInterval: 0 });
-
-  if (notifier.update) {
-    console.log(chalk.green.bold(`Update available!`));
-    console.log(chalk.green.bold(`Please update to the latest version (${notifier.update.latest}) to continue`));
-    console.log(chalk.green.bold('You can do this using \'npm i -g @nosplatform/create-nos-dapp\' or \'yarn global add @nosplatform/create-nos-dapp\' '));
-    notifier.notify();
-    process.exit(0);
-  }
-
-  await main();
-};
-
-createNosDapp()
-  .then(() => console.log(chalk.green.bold('---')))
-  .catch(err=> console.log(chalk.red.bold(err)));
+try {
+  (async () => {
+    const asciiText = await ascii("create nOS dApp");
+    console.log(chalk.green(asciiText));
+    notifyUpdate();
+    await main();
+    console.log(chalk.green.bold('---'));
+  })();
+} catch (err) {
+  console.log(chalk.red.bold(err));
+}
 

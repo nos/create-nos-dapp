@@ -1,5 +1,5 @@
 {
-  "name": "create-nos-dapp",
+  "name": "@nosplatform/create-nos-dapp",
   "version": "0.2.0",
   "description": "Create a dapp on the nOS platform",
   "license": "MIT",

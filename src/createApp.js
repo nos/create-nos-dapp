@@ -4,11 +4,10 @@ import inquirer from "inquirer";
 import path from "path";
 
 import install from "./install";
-import { questions } from "./questions";
+import questions from "./questions";
 
-const createApp = async type => {
-  const answers = await inquirer.prompt(questions[1]);
-  const projectName = answers.name;
+const createApp = async (type, name) => {
+  const { name: projectName } = name ? { name } : await inquirer.prompt(questions.name);
   const directory = path.resolve(process.cwd(), projectName);
   const source = path.resolve(__dirname, "..", "packages", type);
 
@@ -32,7 +31,7 @@ const createApp = async type => {
     }
   } else {
     console.log(chalk.red(`Project folder already exists: ${directory}`));
-    return createApp(type);
+    return createApp(type, name);
   }
 };
 

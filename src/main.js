@@ -2,10 +2,10 @@ import chalk from "chalk";
 import inquirer from "inquirer";
 
 import createApp from "./createApp";
-import { questions } from "./questions";
+import questions from "./questions";
 
 const main = async () => {
-  const answers = await inquirer.prompt(questions[0]);
+  const answers = await inquirer.prompt(questions.type);
 
   // Any other answer than the current existing starter kits
   if(answers.type === 'others (coming soon..)') {

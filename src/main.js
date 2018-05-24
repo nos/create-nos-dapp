@@ -13,7 +13,7 @@ const main = async () => {
     return main();
   }
 
-  // Answer: ReactJS
+  // Answer: React
   if(answers.type === 'react') {
     return createApp(answers.type);
   }

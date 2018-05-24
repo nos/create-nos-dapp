@@ -13,7 +13,7 @@ export const questions = [
     default: "my-nos-dapp",
     validate: value => {
       if (value.match(
-        /^[a-z_\-]+$/
+        /^[a-zA-Z_\-]+$/
       )) return true;
       return 'Please enter a valid project name';
     }

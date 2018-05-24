@@ -11,7 +11,7 @@ import pkg from "../package";
 
 const createNosDapp = async () => {
   const asciiText = await ascii("create nOS dApp");
-  console.log(asciiText);
+  console.log(chalk.green(asciiText));
 
   const notifier = updateNotifier({ pkg, updateCheckInterval: 0 });
 

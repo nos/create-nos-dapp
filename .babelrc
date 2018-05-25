@@ -1,11 +1,9 @@
 {
   "presets": [
-    "react",
-    "env"
-  ],
-  "plugins": [
-    ["transform-object-rest-spread", { "useBuiltIns": true }],
-    "transform-function-bind",
-    "transform-class-properties"
+    ["@babel/preset-env", {
+      "targets": {
+        "browsers": ["last 2 versions", "safari >= 7"]
+      }
+    }]
   ]
 }

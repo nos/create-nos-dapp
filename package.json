@@ -1,6 +1,6 @@
 {
   "name": "@nosplatform/create-nos-dapp",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Create a dapp on the nOS platform",
   "license": "MIT",
   "main": "lib/index.js",
@@ -11,7 +11,7 @@
     "start": "node lib/index.js",
     "build": "rimraf lib && ./node_modules/.bin/babel src -d lib"
   },
-  "devDependencies": {
+  "dependencies": {
     "@babel/cli": "^7.0.0-beta.46",
     "@babel/core": "^7.0.0-beta.46",
     "@babel/polyfill": "^7.0.0-beta.46",

@@ -24,14 +24,14 @@ The goal of this project is to provide a quickstart for creating nOS dApps with 
 
 ## Installation
 
-First, we need to install the [npm package](https://www.npmjs.com/package/@nosplatform/create-nos-dapp). This will make the `nos-create-dapp` command available in your command prompt. You can install the npm package by executing one of the following commands
+First, we need to install the [npm package](https://www.npmjs.com/package/@nosplatform/create-nos-dapp). This will make the `create-nos-dapp` command available in your command prompt. You can install the npm package by executing one of the following commands
 
 ```
 # Using yarn
-yarn add global @nosplatform/nos-create-dapp
+yarn add global @nosplatform/create-nos-dapp
 
 # Using npm
-npm i -g @nosplatform/nos-create-dapp
+npm i -g @nosplatform/create-nos-dapp
 ```
 
 ---

@@ -3,30 +3,31 @@
 import "@babel/polyfill";
 
 import chalk from "chalk";
-import updateNotifier from "update-notifier"
 
-import main from "./main";
-import ascii from "./ascii";
-import pkg from "../package";
+import { argParser, ascii, updateNotifier, spinner } from "./utils";
+import { copyFiles, getType, getName } from "./steps";
 
-const createNosDapp = async () => {
-  const asciiText = await ascii("create nOS dApp");
-  console.log(asciiText);
+try {
+  (async () => {
+    // Initialize argParser, this is here because -v and -h shouldn't spam the ascii text
+    const { type, name } = argParser.parseArgs();
 
-  const notifier = updateNotifier({ pkg, updateCheckInterval: 0 });
+    // Fancy ascii text
+    const asciiText = await ascii("create nOS dApp");
+    console.log(chalk.green(asciiText));
 
-  if (notifier.update) {
-    console.log(chalk.green.bold(`Update available!`));
-    console.log(chalk.green.bold(`Please update to the latest version (${notifier.update.latest}) to continue`));
-    console.log(chalk.green.bold('You can do this using \'npm i -g @nosplatform/create-nos-dapp\' or \'yarn global add @nosplatform/create-nos-dapp\' '));
-    notifier.notify();
-    process.exit(0);
-  }
+    // Check if updates are available
+    updateNotifier();
 
-  await main();
-};
+    // Get arguments
+    const dappType = await getType(type);
+    const dappName = await getName(name);
 
-createNosDapp()
-  .then(() => console.log(chalk.green.bold('---')))
-  .catch(err=> console.log(chalk.red.bold(err)));
+    // The work
+    spinner.start();
+    await copyFiles(dappType, dappName);
+  })();
+} catch (err) {
+  console.log(chalk.red.bold(err));
+}
 

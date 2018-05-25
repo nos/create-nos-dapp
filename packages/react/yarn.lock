@@ -92,9 +92,9 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@cityofzion/neon-js@3.6.2":
-  version "3.6.2"
-  resolved "https://registry.yarnpkg.com/@cityofzion/neon-js/-/neon-js-3.6.2.tgz#a27ffda9defae273786fd150b47b1b402f703f10"
+"@cityofzion/neon-js@3.8.0":
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/@cityofzion/neon-js/-/neon-js-3.8.0.tgz#2cffe4785aff99e889865a68faa1bb2416a22c82"
   dependencies:
     axios "^0.18.0"
     bignumber.js "5.0.0"
@@ -110,9 +110,9 @@
     semver "^5.5.0"
     wif "^2.0.6"
 
-"@nosplatform/api-functions@0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@nosplatform/api-functions/-/api-functions-0.1.3.tgz#643f97e46841a22992a70d8b9981496fb3599b5c"
+"@nosplatform/api-functions@0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@nosplatform/api-functions/-/api-functions-0.2.2.tgz#f8a1ceee64633ee4bed28dd5b866620292b00ab5"
   dependencies:
     prop-types "15.6.1"
 

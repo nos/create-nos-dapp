@@ -1,9 +1,9 @@
 {
-  "name": "dapp-starter-kit",
+  "name": "nos-dapp",
   "version": "1.0.0",
-  "description": "Create a dapp on the nOS platform",
+  "description": "",
   "scripts": {
-    "build": "",
+    "build": "parcel build src/index.html",
     "precommit": "yarn lint",
     "lint": "eslint 'src/**/*.js*'",
     "start": "parcel src/index.html --no-hmr",
@@ -26,14 +26,14 @@
     "HTML",
     "starter"
   ],
-  "author": "nOS <contact@nos.io>",
+  "author": "",
   "bugs": {
     "url": "https://github.com/nos/create-nos-dapp/issues"
   },
   "homepage": "https://github.com/nos/create-nos-dapp#readme",
   "dependencies": {
-    "@cityofzion/neon-js": "3.6.2",
-    "@nosplatform/api-functions": "0.1.3",
+    "@cityofzion/neon-js": "3.8.0",
+    "@nosplatform/api-functions": "0.2.2",
     "babel-polyfill": "6.26.0",
     "jss": "9.8.1",
     "jss-camel-case": "6.1.0",

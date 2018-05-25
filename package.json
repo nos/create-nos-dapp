@@ -1,6 +1,6 @@
 {
   "name": "@nosplatform/create-nos-dapp",
-  "version": "0.2.0",
+  "version": "0.2.0-alpha.1",
   "description": "Create a dapp on the nOS platform",
   "license": "MIT",
   "main": "lib/index.js",
@@ -16,6 +16,7 @@
     "@babel/core": "^7.0.0-beta.46",
     "@babel/polyfill": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.46",
+    "argparse": "^1.0.10",
     "babel-eslint": "^8.2.3",
     "chalk": "^2.4.1",
     "eslint": "^4.19.1",

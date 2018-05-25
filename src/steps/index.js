@@ -1,5 +1,5 @@
-import getType from "./getType";
+import copyFiles from "./copyFiles";
 import getName from "./getName";
-import install from "./install";
+import getType from "./getType";
 
-export { getName, getType, install };
+export { copyFiles, getName, getType };

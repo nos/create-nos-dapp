@@ -3,8 +3,10 @@ import inquirer from "inquirer";
 
 import questions from "./../questions";
 
-const getType = async () => {
-  const { type } = await inquirer.prompt(questions.type);
+const getType = async argParserType => {
+  const { type } = argParserType
+    ? { type: argParserType }
+    : await inquirer.prompt(questions.type);
 
   if (type === "others (coming soon..)") {
     console.log(

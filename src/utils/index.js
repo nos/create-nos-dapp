@@ -1,5 +1,7 @@
+import argParser from "./argParser";
 import ascii from "./ascii";
-import updateNotifier from "./updateNotifier";
+import install from "./install";
 import spinner from "./spinner";
+import updateNotifier from "./updateNotifier";
 
-export { ascii, updateNotifier, spinner };
+export { argParser, ascii, install, spinner, updateNotifier };

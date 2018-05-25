@@ -1,6 +1,6 @@
 {
   "name": "@nosplatform/create-nos-dapp",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Create a dapp on the nOS platform",
   "license": "MIT",
   "main": "lib/index.js",
@@ -12,24 +12,26 @@
     "build": "rimraf lib && ./node_modules/.bin/babel src -d lib"
   },
   "dependencies": {
-    "@babel/cli": "^7.0.0-beta.46",
-    "@babel/core": "^7.0.0-beta.46",
     "@babel/polyfill": "^7.0.0-beta.46",
-    "@babel/preset-env": "^7.0.0-beta.46",
     "argparse": "^1.0.10",
-    "babel-eslint": "^8.2.3",
     "chalk": "^2.4.1",
-    "eslint": "^4.19.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.0",
     "execa": "^0.10.0",
     "figlet": "^1.2.0",
     "fs-extra": "^5.0.0",
     "inquirer": "^5.2.0",
     "ora": "^2.1.0",
-    "prettier": "^1.12.1",
     "rimraf": "^2.6.2",
     "update-notifier": "^2.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.46",
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "prettier": "^1.12.1"
   },
   "repository": {
     "type": "git",

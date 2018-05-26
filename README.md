@@ -34,7 +34,7 @@ First, we need to install the [npm package](https://www.npmjs.com/package/@nospl
 
 ```
 # Using yarn
-yarn add global @nosplatform/create-nos-dapp
+yarn global add @nosplatform/create-nos-dapp
 
 # Using npm
 npm i -g @nosplatform/create-nos-dapp

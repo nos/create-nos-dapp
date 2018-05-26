@@ -13,6 +13,12 @@
   <a href='https://www.npmjs.com/package/@nosplatform/create-nos-dapp'>
     <img src='https://badge.fury.io/js/%40nosplatform%2Fcreate-nos-dapp.svg'>
   </a>
+  <a href='http://makeapullrequest.com'>
+    <img src='https://img.shields.io/badge/PRs-welcome-brightgreen.svg'>
+  </a>
+  <a href='https://discordapp.com/invite/eGFAskm'>
+    <img src='https://img.shields.io/badge/chat-discord-green.svg'>
+  </a>
   <a href='https://github.com/prettier/prettier'>
     <img src='https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat'>
   </a>

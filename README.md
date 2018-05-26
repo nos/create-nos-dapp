@@ -25,6 +25,9 @@
 </p>
 
 ## Purpose
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/nos/create-nos-dapp.svg)](https://greenkeeper.io/)
+
 The goal of this project is to provide a quickstart for creating nOS dApps with various frontend technologies already installed and configured to work with the nOS platform.
 
 

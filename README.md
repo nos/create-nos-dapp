@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./logo.png" width="150px" />
+  <img src="https://raw.githubusercontent.com/nos/create-nos-dapp/development/logo.png" width="150px" />
 </p>
 
 <h1 align="center">create-nos-dapp</h1>
@@ -12,6 +12,12 @@
 <p align="center">
   <a href='https://www.npmjs.com/package/@nosplatform/create-nos-dapp'>
     <img src='https://badge.fury.io/js/%40nosplatform%2Fcreate-nos-dapp.svg'>
+  </a>
+  <a href='http://makeapullrequest.com'>
+    <img src='https://img.shields.io/badge/PRs-welcome-brightgreen.svg'>
+  </a>
+  <a href='https://discordapp.com/invite/eGFAskm'>
+    <img src='https://img.shields.io/badge/chat-discord-green.svg'>
   </a>
   <a href='https://github.com/prettier/prettier'>
     <img src='https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat'>
@@ -66,11 +72,11 @@ Optional arguments:
 ## Resources to get started with the generated project
 
 #### API Documentation
-- [API documentation of nOS](https://github.com/nos/client/blob/master/docs/api.md)
-- [Documentation of Api-Functions (SDK wrapper of the nOS API, used in the starter kits) (TODO)]()
+- [API documentation of nOS](https://github.com/nos/client/blob/develop/docs/api.md)
+- [Coming soon: Documentation of Api-Functions (SDK wrapper of the nOS API, used in the starter kits)](https://github.com/nos/api-functions)
 
 #### Getting started with the project templates
-- [React Starter Kit (TODO)]()
-- [VueJS Starter Kit (Coming soon)]()
-- [AngularJS Starter Kit (Coming soon)]()
-- [Vanilla Javascript Starter Kit (Coming soon)]()
+- [React Starter Kit](https://github.com/nos/create-nos-dapp/blob/template/react/packages/react)
+- [VueJS Starter Kit (Coming soon)](https://github.com/nos/create-nos-dapp)
+- [AngularJS Starter Kit (Coming soon)](https://github.com/nos/create-nos-dapp)
+- [Vanilla Javascript Starter Kit (Coming soon)](https://github.com/nos/create-nos-dapp)

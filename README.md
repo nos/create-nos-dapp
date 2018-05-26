@@ -66,11 +66,11 @@ Optional arguments:
 ## Resources to get started with the generated project
 
 #### API Documentation
-- [API documentation of nOS](https://github.com/nos/client/blob/master/docs/api.md)
-- [Documentation of Api-Functions (SDK wrapper of the nOS API, used in the starter kits) (TODO)]()
+- [API documentation of nOS](https://github.com/nos/client/blob/develop/docs/api.md)
+- [Coming soon: Documentation of Api-Functions (SDK wrapper of the nOS API, used in the starter kits)](https://github.com/nos/api-functions)
 
 #### Getting started with the project templates
-- [React Starter Kit (TODO)]()
-- [VueJS Starter Kit (Coming soon)]()
-- [AngularJS Starter Kit (Coming soon)]()
-- [Vanilla Javascript Starter Kit (Coming soon)]()
+- [React Starter Kit](https://github.com/nos/create-nos-dapp/blob/template/react/packages/react)
+- [VueJS Starter Kit (Coming soon)](https://github.com/nos/create-nos-dapp)
+- [AngularJS Starter Kit (Coming soon)](https://github.com/nos/create-nos-dapp)
+- [Vanilla Javascript Starter Kit (Coming soon)](https://github.com/nos/create-nos-dapp)

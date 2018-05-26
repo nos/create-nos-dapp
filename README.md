@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./logo.png" width="150px" />
+  <img src="https://raw.githubusercontent.com/nos/create-nos-dapp/development/logo.png" width="150px" />
 </p>
 
 <h1 align="center">create-nos-dapp</h1>

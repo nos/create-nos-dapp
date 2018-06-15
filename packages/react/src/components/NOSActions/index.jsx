@@ -42,13 +42,14 @@ class NOSActions extends React.Component {
     // The storagekey you want to query
     const key = "";
 
-    // The amount and recipient of your send function
-    const recipient = "";
+    // The asset, amount and receiver of your send function
+    const receiver = "";
     const amount = "";
+    const asset = gas;
 
     const invoke = { scriptHash, operation, args }; // and testInvoke
     const getStorage = { scriptHash, key };
-    const send = { amount, asset: gas, recipient };
+    const send = { amount, asset, receiver };
 
     return (
       <React.Fragment>

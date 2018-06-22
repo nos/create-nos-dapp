@@ -8,6 +8,7 @@
     "create-nos-dapp": "lib/index.js"
   },
   "scripts": {
+    "test": "echo \"No tests yet\"",
     "start": "node lib/index.js",
     "build": "rimraf lib && ./node_modules/.bin/babel src -d lib"
   },

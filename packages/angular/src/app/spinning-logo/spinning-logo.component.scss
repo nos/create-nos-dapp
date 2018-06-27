@@ -1,0 +1,20 @@
+.logo-container {
+  display: block;
+  max-width: 200px;
+  margin: 32px auto;
+  position: relative;
+}
+
+.nos-logo {
+  animation: nOS-logo-spin infinite 3s linear;
+  width: 100%
+}
+
+@keyframes nOS-logo-spin {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}

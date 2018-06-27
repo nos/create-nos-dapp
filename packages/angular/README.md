@@ -50,7 +50,7 @@ $ npm start
 Change `README.md` and `package.json` to fit your project needs. Delete `LICENSE` if not applicable.
 
 ## Testing
-Use `npm test` or `npm run test` to run all tests locally. The `test` command is reserved for CI builds.
+Use `npm test` or `npm run test` to run the Karma tests. The `test` command is reserved for CI builds. Use `npm run e2e` to run the e2e tests.
 
 ## Build
 Use `npm run build` to build the project.  Use `npm run prod-build` for a production build. The build artifacts will be stored in the `dist` directory.
@@ -60,15 +60,29 @@ Use `npm run build` to build the project.  Use `npm run prod-build` for a produc
 angular-stack-boilerplate
 ├── src
 │   ├── app
+│   │   ├── header
+│   │   │   ├── header.component.html
+│   │   │   ├── header.component.scss
+│   │   │   ├── header.component.spec.ts
+│   │   │   └── header.component.ts
+│   │   ├── nos-actions
+│   │   │   ├── nos-actions.component.html
+│   │   │   ├── nos-actions.component.scss
+│   │   │   ├── nos-actions.component.spec.ts
+│   │   │   └── nos-actions.component.ts
+│   │   ├── spinning-logo
+│   │   │   ├── spinning-logo.component.html
+│   │   │   ├── spinning-logo.component.scss
+│   │   │   ├── spinning-logo.component.spec.ts
+│   │   │   └── spinning-logo.component.ts
 │   │   ├── app.component.html
 │   │   ├── app.component.scss
 │   │   ├── app.component.spec.ts
 │   │   ├── app.component.ts
 │   │   ├── app.module.ts
-│   │   ├── header.component.ts
-│   │   ├── nos-actions.component.ts
-│   │   ├── spinning-logo.component.ts
+│   │   └── header.component.ts
 │   ├── assets
+│   │   └── logo.png
 │   ├── environments
 │   │   ├── environment.prod.ts
 │   │   └── environment.ts

@@ -1,0 +1,17 @@
+<button class="button" (click)="handleAlert(nos.getAddress())">Get Address</button>
+
+<button class="button" (click)="handleAlert(nos.getBalance(neo))">Get NEO Balance</button>
+
+<button class="button" (click)="handleAlert(nos.getBalance(gas))">Get GAS Balance</button>
+
+<button class="button" (click)="handleAlert(nos.getBalance(rpx))">Get RPX Balance</button>
+
+<button class="button" (click)="handleClaimGas()">Claim Gas</button>
+
+<button class="button" (click)="handleAlert(nos.send(send))">Send GAS to...</button>
+
+<button class="button" (click)="handleAlert(nos.testInvoke(invoke))">TestInvoke</button>
+
+<!--<button class="button" (click)="handleAlert(nos.invoke(invoke))">Invoke</button>-->
+
+<button class="button" (click)="handleAlert(nos.getStorage(getStorage))">GetStorage</button>

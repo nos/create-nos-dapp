@@ -35,8 +35,6 @@
   },
   "homepage": "https://github.com/nos/create-nos-dapp#readme",
   "dependencies": {
-    "@cityofzion/neon-js": "3.8.0",
-    "@nosplatform/api-functions": "0.2.2",
     "@angular/animations": "6.0.3",
     "@angular/common": "6.0.3",
     "@angular/compiler": "6.0.3",
@@ -46,6 +44,8 @@
     "@angular/platform-browser": "6.0.3",
     "@angular/platform-browser-dynamic": "6.0.3",
     "@angular/router": "6.0.3",
+    "@cityofzion/neon-js": "3.8.0",
+    "@nosplatform/api-functions": "0.2.2",
     "core-js": "2.5.4",
     "rimraf": "^2.6.2",
     "rxjs": "6.0.0",

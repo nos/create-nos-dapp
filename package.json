@@ -12,26 +12,26 @@
     "build": "rimraf lib && ./node_modules/.bin/babel src -d lib"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0-beta.46",
-    "argparse": "^1.0.10",
-    "chalk": "^2.4.1",
-    "execa": "^0.10.0",
-    "figlet": "^1.2.0",
-    "fs-extra": "^5.0.0",
-    "inquirer": "^5.2.0",
-    "ora": "^2.1.0",
-    "rimraf": "^2.6.2",
-    "update-notifier": "^2.5.0"
+    "argparse": "1.0.10",
+    "chalk": "2.4.1",
+    "execa": "0.10.0",
+    "figlet": "1.2.0",
+    "fs-extra": "6.0.1",
+    "inquirer": "6.0.0",
+    "ora": "2.1.0",
+    "rimraf": "2.6.2",
+    "update-notifier": "2.5.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.46",
-    "@babel/core": "^7.0.0-beta.46",
-    "@babel/preset-env": "^7.0.0-beta.46",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.0",
-    "babel-eslint": "^8.2.3",
-    "eslint": "^4.19.1",
-    "prettier": "^1.12.1"
+    "@babel/polyfill": "7.0.0-beta.51",
+    "@babel/cli": "7.0.0-beta.51",
+    "@babel/core": "7.0.0-beta.51",
+    "@babel/preset-env": "7.0.0-beta.51",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-prettier": "2.6.1",
+    "babel-eslint": "8.2.5",
+    "eslint": "5.0.1",
+    "prettier": "1.13.6"
   },
   "repository": {
     "type": "git",

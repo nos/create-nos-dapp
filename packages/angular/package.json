@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "ng": "ng",
-    "start": "webpack-dev-server --port=4200",
-    "build": "webpack",
-    "prod-build": "ng build --prod",
-    "test": "karma start ./karma.conf.js",
+    "build": "webpack --config webpack.dev.config",
+    "build:prod": "webpack --config webpack.prod.config",
+    "start": "webpack-dev-server --port=4200 --config webpack.dev.config",
     "lint": "ng lint",
-    "e2e": "protractor ./protractor.conf.js",
-    "pree2e": "webdriver-manager update --standalone false --gecko false --quiet"
+    "test": "karma start ./karma.conf.js",
+    "pree2e": "webdriver-manager update --standalone false --gecko false --quiet",
+    "e2e": "protractor ./protractor.conf.js"
   },
   "repository": {
     "type": "git",

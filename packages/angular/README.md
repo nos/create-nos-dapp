@@ -49,11 +49,14 @@ $ npm start
 
 Change `README.md` and `package.json` to fit your project needs. Delete `LICENSE` if not applicable.
 
+## Lint
+Use `npm run lint` to run the lint tool.
+
 ## Testing
 Use `npm test` or `npm run test` to run the Karma tests. The `test` command is reserved for CI builds. Use `npm run e2e` to run the e2e tests.
 
 ## Build
-Use `npm run build` to build the project. Use `npm run prod-build` for a production build. The build artifacts will be stored in the `dist` directory.
+Use `npm run build` to build the project. Use `npm run build:prod` for a production build. The build artifacts will be stored in the `dist` directory.
 
 ## Document structure
 ```
@@ -110,5 +113,6 @@ angular
 ├── README.md
 ├── tsconfig.json
 ├── tslint.json
-└── webpack.config.json
+├── webpack.dev.config.json
+└── webpack.prod.config.json
 ```

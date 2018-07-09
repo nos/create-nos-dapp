@@ -28,7 +28,7 @@ In this repo you can find NEO specific tooling:
 * neon-js, providing extra NEO functionality
 
 Also general frameworks and tooling:
-* Angular 6
+* Angular 5
 * SCSS
 * Karma and Jasmine
 * Webpack

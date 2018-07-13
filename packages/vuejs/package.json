@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx parcel index.html",
+    "start": "npx parcel index.html",
     "lint": "eslint --fix --ext .js,.vue src"
   },
   "author": "",

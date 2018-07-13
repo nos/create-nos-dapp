@@ -12,7 +12,9 @@
   <a href="https://github.com/nos/create-nos-dapp/releases">
     <img src="https://img.shields.io/github/tag/nos/create-nos-dapp.svg?style=flat">
   </a>
-  [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+  <a href="https://standardjs.com" rel="nofollow">
+    <img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="JavaScript Style Guide">
+  </a>
 </p>
 
 ## Getting started

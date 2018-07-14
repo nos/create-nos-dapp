@@ -5,10 +5,13 @@
             <img class="nos-logo" src="../assets/logo.png"/>
         </div>
         <div v-if="address !== ''">welcome {{ address }}</div>
+        <div v-if="balance !== null">your balance is: {{ balance }}</div>
     </div>
 </template>
 
 <script>
+  const gas = "602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7";
+
 export default {
   name: 'AppHeader',
   props: {
@@ -25,11 +28,13 @@ export default {
   methods: {
     setAddress: async function () {
       this.address = await this.nos.getAddress()
+      this.balance = await this.nos.getBalance({asset: gas})
     }
   },
   data () {
     return {
-      address: ''
+      address: '',
+      balance: null
     }
   }
 }

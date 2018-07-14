@@ -1,5 +1,3 @@
-import fs from "fs-extra";
-
 import getName from "../../src/steps/getName";
 
 describe('getName', function () {
@@ -10,9 +8,6 @@ describe('getName', function () {
   });
 
   it('Should ask for folder and create one', async () => {
-    // Setup
-    fs.existsSync.mockReturnValue(true);
-
     // Execution
     process.nextTick(function mockResponse() {
       stdin.send('my-folder');

@@ -8,13 +8,13 @@
     "create-nos-dapp": "lib/index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node lib/index.js",
-    "build": "rimraf lib && ./node_modules/.bin/babel src -d lib"
+    "build": "rimraf lib && ./node_modules/.bin/babel src --out-dir lib",
+    "test": "jest"
   },
   "dependencies": {
-    "@babel/polyfill": "7.0.0-beta.46",
     "argparse": "1.0.10",
+    "babel-polyfill": "6.26.0",
     "chalk": "2.4.1",
     "execa": "0.10.0",
     "figlet": "1.2.0",
@@ -25,13 +25,14 @@
     "update-notifier": "2.5.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.0.0-beta.46",
-    "@babel/core": "7.0.0-beta.46",
-    "@babel/preset-env": "7.0.0-beta.46",
+    "babel-cli": "6.26.0",
+    "babel-eslint": "8.2.3",
+    "babel-preset-env": "1.7.0",
+    "eslint": "4.19.1",
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-prettier": "2.6.0",
-    "babel-eslint": "8.2.3",
-    "eslint": "4.19.1",
+    "jest": "^23.4.1",
+    "mock-stdin": "^0.3.1",
     "prettier": "1.12.1"
   },
   "repository": {
@@ -52,5 +53,11 @@
   "bugs": {
     "url": "https://github.com/nos/create-nos-dapp/issues"
   },
-  "homepage": "https://github.com/nos/create-nos-dapp#readme"
+  "homepage": "https://github.com/nos/create-nos-dapp#readme",
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/packages/"
+    ]
+  }
 }

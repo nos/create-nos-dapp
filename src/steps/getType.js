@@ -3,11 +3,6 @@ import inquirer from "inquirer";
 
 import questions from "./../questions";
 
-const validTypes = {
-  react: true,
-  vuejs: true
-};
-
 const getType = async argParserType => {
   const { type } = argParserType
     ? { type: argParserType }
@@ -20,7 +15,7 @@ const getType = async argParserType => {
     return getType();
   }
 
-  if (validTypes[type]) {
+  if (type === "react") {
     return type;
   }
 

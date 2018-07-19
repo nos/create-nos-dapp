@@ -27,7 +27,7 @@ exports[`Components Header should render 1`] = `
   >
     To get started, edit 
     <code>
-      src/views/App/index.js
+      src/views/App/index.jsx
     </code>
      and save to reload.
   </p>

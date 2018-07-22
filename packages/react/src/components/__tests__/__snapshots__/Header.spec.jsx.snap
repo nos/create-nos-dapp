@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Header should render 1`] = `
+<header
+  class="Header-header-0-1-1"
+>
+  <h1
+    class="Header-title-0-1-2"
+  >
+    Hello world!
+  </h1>
+  <div
+    class="SpinningLogo-logoContainer-0-1-3"
+  >
+    <img
+      alt="nOS logo"
+      class="SpinningLogo-nosLogo-0-1-4"
+      src="test-file-stub"
+    />
+  </div>
+</header>
+`;

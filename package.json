@@ -1,0 +1,55 @@
+{
+  "name": "@nosplatform/create-nos-dapp",
+  "version": "0.2.2",
+  "description": "Create a dapp on the nOS platform",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "bin": {
+    "create-nos-dapp": "lib/index.js"
+  },
+  "scripts": {
+    "start": "node lib/index.js",
+    "build": "rimraf lib && ./node_modules/.bin/babel src -d lib"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0-beta.46",
+    "argparse": "^1.0.10",
+    "chalk": "^2.4.1",
+    "execa": "^0.10.0",
+    "figlet": "^1.2.0",
+    "fs-extra": "^5.0.0",
+    "inquirer": "^5.2.0",
+    "ora": "^2.1.0",
+    "rimraf": "^2.6.2",
+    "update-notifier": "^2.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.46",
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "prettier": "^1.12.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nos/create-nos-dapp.git"
+  },
+  "keywords": [
+    "nOS",
+    "NEO",
+    "Blockhain",
+    "CLI",
+    "starter",
+    "react",
+    "js",
+    "javascript"
+  ],
+  "author": "nOS <contact@nos.io>",
+  "bugs": {
+    "url": "https://github.com/nos/create-nos-dapp/issues"
+  },
+  "homepage": "https://github.com/nos/create-nos-dapp#readme"
+}

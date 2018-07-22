@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components SpinningLogo should render 1`] = `
+<div
+  class="SpinningLogo-logoContainer-0-1-1"
+>
+  <img
+    alt="nOS logo"
+    class="SpinningLogo-nosLogo-0-1-2"
+    src="test-file-stub"
+  />
+</div>
+`;

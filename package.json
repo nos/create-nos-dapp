@@ -1,6 +1,6 @@
 {
   "name": "@nosplatform/create-nos-dapp",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Create a dapp on the nOS platform",
   "license": "MIT",
   "main": "lib/index.js",

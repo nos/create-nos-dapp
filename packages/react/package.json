@@ -32,8 +32,8 @@
   },
   "homepage": "https://github.com/nos/create-nos-dapp#readme",
   "dependencies": {
-    "@cityofzion/neon-js": "3.8.0",
-    "@nosplatform/api-functions": "0.2.2",
+    "@cityofzion/neon-js": "3.9.2",
+    "@nosplatform/api-functions": "0.3.0",
     "babel-polyfill": "6.26.0",
     "jss": "9.8.1",
     "jss-camel-case": "6.1.0",

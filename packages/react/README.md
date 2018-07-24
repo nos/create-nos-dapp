@@ -1,16 +1,16 @@
 <p align="center">
-  <img src="./logo.png" width="150px" /> 
+  <img src="./src/assets/logo.png" width="150px" /> 
 </p>
 
-<h1 align="center">dapp-starter-kit</h1>
+<h1 align="center">React dApp Starter Kit</h1>
 
 <p align="center">
   This is a starter-kit for creating a <strong>dApp</strong> on the <strong>nOS</strong> platform
 </p>
 
 <p align="center">
-  <a href="https://github.com/nos/dapp-starter-kit/releases">
-    <img src="https://img.shields.io/github/tag/nos/dapp-starter-kit.svg?style=flat">
+  <a href="https://github.com/nos/create-nos-dapp/releases">
+    <img src="https://img.shields.io/github/tag/nos/create-nos-dapp.svg?style=flat">
   </a>
   <a href='https://github.com/prettier/prettier'>
     <img src='https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat'>
@@ -18,7 +18,7 @@
 </p>
 
 ## Getting started
-To get started, go to our [Getting Started](./docs/gettingStarted.md) guide. Afterwards you can check out the nOS [API documentation](https://github.com/nos/client/blob/master/docs/api.md)
+To get started, you can check out the nOS [API documentation](https://github.com/nos/client/blob/develop/docs/api.md)
 
 ## Purpose
 The goal of this project is to provide a quickstart for creating nOS dApps with React and various dependencies already installed and configured.
@@ -48,9 +48,7 @@ And finally some testing and security:
 
 ## Setup
 ```bash
-$ git clone https://github.com/nos/dapp-starter-kit.git my-dapp
-$ cd my-dapp
-$ yarn
+$ cd my-dapp-name
 $ yarn start
 ```
 
@@ -67,18 +65,23 @@ react-stack-boilerplate
 │   ├── __mocks__
 │   ├── assets
 │   ├── components
-│   │   └── __tests__
-│   │       └── __snapshots__
-│   ├── nos
+│   │   ├── __tests__
+│   │   ├── Header
+│   │   ├── NOSActions
+│   │   └── SpinningLogo
 │   └── views
-│       └── __tests__
-│           └── __snapshots__
+│       ├── __tests__
+│       │   └── __snapshots__
+│       └── App
 ├── .babelrc
+├── .eslintignore
 ├── .eslintrc
 ├── .gitignore
-├── CHANGELOG.md
+├── .prettierrc
 ├── jest.config.js
 ├── jest.setup.js
+├── LICENSE
+├── logo.png
 ├── package.json
 ├── README.md
 └── yarn.lock

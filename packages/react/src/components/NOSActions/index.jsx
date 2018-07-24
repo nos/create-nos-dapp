@@ -1,9 +1,7 @@
 import React from "react";
 import injectSheet from "react-jss";
 import PropTypes from "prop-types";
-import { react } from "@nosplatform/api-functions";
-
-const { injectNOS, nosProps } = react.default;
+import { injectNOS, nosProps } from "@nosplatform/api-functions/lib/react";
 
 const styles = {
   button: {

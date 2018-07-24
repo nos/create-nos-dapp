@@ -65,7 +65,7 @@ Optional arguments:
   -v, --version         Show program's version number and exit.
   -t TYPE, --type TYPE  Template type (react/vanilla/vue)
   -n NAME, --name NAME  Project name, f.e. my-nos-dapp
-``` 
+```
 
 ---
 

@@ -29,8 +29,9 @@ The goal of this project is to provide a quickstart for creating nOS dApps with 
 
 
 ## Installation
+Before we start, we need to install npm and in order to avoid permission issues on different OS, we suggest using nvm. You can follow the install instructions [here](https://docs.npmjs.com/getting-started/installing-node#using-a-version-manager-to-install-nodejs-and-npm).
 
-First, we need to install the [npm package](https://www.npmjs.com/package/@nosplatform/create-nos-dapp). This will make the `create-nos-dapp` command available in your command prompt. You can install the npm package by executing one of the following commands
+After successfully installing npm, we need to install the [npm package](https://www.npmjs.com/package/@nosplatform/create-nos-dapp). This will make the `create-nos-dapp` command available in your command prompt. You can install the npm package by executing one of the following commands
 
 ```
 # Using yarn

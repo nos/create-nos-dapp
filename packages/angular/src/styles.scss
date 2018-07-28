@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+$source-sans-pro: 'Source Sans Pro', sans-serif;
+
+html, body {
+  font-family: $source-sans-pro;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}

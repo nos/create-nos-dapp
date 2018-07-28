@@ -1,2 +1,2 @@
 # nos-dapp-starterkit
-A React starterkit to create a dApp on nOs!
+An Angualar starterkit to create a dApp on nOS!

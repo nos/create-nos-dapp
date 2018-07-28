@@ -2,7 +2,7 @@
   <img src="./src/assets/logo.png" width="150px" /> 
 </p>
 
-<h1 align="center">React dApp Starter Kit</h1>
+<h1 align="center">Angular dApp Starter Kit</h1>
 
 <p align="center">
   This is a starter-kit for creating a <strong>dApp</strong> on the <strong>nOS</strong> platform

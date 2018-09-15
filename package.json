@@ -13,8 +13,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "@babel/polyfill": "7.0.0",
     "argparse": "1.0.10",
-    "babel-polyfill": "6.26.0",
     "chalk": "2.4.1",
     "execa": "0.10.0",
     "figlet": "1.2.0",
@@ -25,15 +25,17 @@
     "update-notifier": "2.5.0"
   },
   "devDependencies": {
-    "babel-cli": "6.26.0",
-    "babel-eslint": "8.2.3",
-    "babel-preset-env": "1.7.0",
-    "eslint": "4.19.1",
-    "eslint-config-prettier": "2.9.0",
-    "eslint-plugin-prettier": "2.6.0",
-    "jest": "^23.4.1",
-    "mock-stdin": "^0.3.1",
-    "prettier": "1.12.1"
+    "@babel/cli": "7.0.0",
+    "@babel/core": "7.0.1",
+    "@babel/preset-env": "7.0.0",
+    "babel-eslint": "9.0.0",
+    "babel-jest": "23.6.0",
+    "eslint": "5.6.0",
+    "eslint-config-prettier": "3.0.1",
+    "eslint-plugin-prettier": "2.6.2",
+    "jest": "23.6.0",
+    "mock-stdin": "0.3.1",
+    "prettier": "1.14.2"
   },
   "repository": {
     "type": "git",
@@ -58,6 +60,9 @@
     "testPathIgnorePatterns": [
       "/node_modules/",
       "/packages/"
-    ]
+    ],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   }
 }

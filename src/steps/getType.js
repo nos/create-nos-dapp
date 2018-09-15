@@ -15,11 +15,12 @@ const getType = async argParserType => {
     return getType();
   }
 
-  if (type === "react") {
+  if (type === "react" || type === "angular") {
     return type;
   }
 
-  throw new Error("An incorrect answer was given, please try again");
+  console.log(chalk.red.bold(`An incorrect answer was given, please try again`));
+  return getType();
 };
 
 export default getType;

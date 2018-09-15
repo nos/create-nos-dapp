@@ -17,7 +17,8 @@ const notifyUpdate = () => {
     );
     console.log(
       chalk.green.bold(
-        "You can do this using 'npm i -g @nosplatform/create-nos-dapp' or 'yarn global add @nosplatform/create-nos-dapp' "
+        "You can do this using 'npm i -g @nosplatform/create-nos-dapp'" +
+          "or 'yarn global add @nosplatform/create-nos-dapp' "
       )
     );
     notifier.notify();

@@ -17,7 +17,9 @@ try {
     console.log(chalk.green(asciiText));
 
     // Check if updates are available
-    updateNotifier();
+    if (process.env.NODE_ENV !== "development") {
+      updateNotifier();
+    }
 
     // Get arguments
     const dappType = await getType(type);
@@ -30,4 +32,3 @@ try {
 } catch (err) {
   console.log(chalk.red.bold(err));
 }
-

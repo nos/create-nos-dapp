@@ -44,6 +44,9 @@
     "mock-stdin": "0.3.1",
     "prettier": "1.14.2"
   },
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nos/create-nos-dapp.git"

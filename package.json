@@ -65,11 +65,13 @@
   },
   "homepage": "https://github.com/nos/create-nos-dapp#readme",
   "lint-staged": {
-    "*.{js,jsx,md}": [
-      "yarn lint --fix",
-      "yarn build",
-      "git add ."
-    ],
+    "linters": {
+      "*.{js}": [
+        "yarn lint --fix",
+        "yarn build",
+        "git add ."
+      ]
+    },
     "ignore": [
       "packages/*",
       "lib/"

@@ -51,6 +51,8 @@ At this point the `create-nos-dapp` command should be available. To create a dAp
 create-nos-dapp
 ```
 
+It will now ask you to choose a project template and what name you'd like to give it. The CLI-tool will create the project in the current working directory.
+
 #### Usage with flags
 
 If you'd like to get started even faster - you could also pass some arguments to the `create-nos-dapp`.

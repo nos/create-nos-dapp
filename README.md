@@ -51,7 +51,7 @@ At this point the `create-nos-dapp` command should be available. To create a dAp
 create-nos-dapp
 ```
 
-It will now ask you to choose a project template and what name you'd like to give it. The CLI-tool will create the project in the current working directory. 
+It will now ask you to choose a project template and what name you'd like to give it. The CLI-tool will create the project in the current working directory.
 
 #### Usage with flags
 
@@ -78,6 +78,7 @@ Optional arguments:
 
 #### Getting started with the project templates
 - [React Starter Kit](https://github.com/nos/create-nos-dapp/blob/template/react/packages/react)
+- [Ember Starter Kit](https://github.com/nos/create-nos-dapp/tree/development/packages/ember)
 - [VueJS Starter Kit (Coming soon)](https://github.com/nos/create-nos-dapp)
 - [AngularJS Starter Kit (Coming soon)](https://github.com/nos/create-nos-dapp)
 - [Vanilla Javascript Starter Kit (Coming soon)](https://github.com/nos/create-nos-dapp)

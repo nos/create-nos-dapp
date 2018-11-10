@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,400italic,700italic,400,300,700);
+@import "pod-styles";
+
+ html, body {
+  font-family: Source Sans Pro;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  text-align: center
+}
+
+.app {
+  text-align: center;
+}
+
+.intro {
+  font-size: large;
+}
+
+.line-break {
+  width: 75%;
+  border-top: 1px solid #333333;
+  margin: 32px auto;
+}
+
+
+.header {
+  background-color: #f0f0f0;
+  color: #333333;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+.title {
+  font-size: 1.5em;
+}

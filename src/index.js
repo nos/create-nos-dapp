@@ -5,8 +5,8 @@ import chalk from "chalk";
 import { argParser, ascii, updateNotifier, spinner } from "./utils";
 import { copyFiles, getType, getName } from "./steps";
 
-try {
-  (async () => {
+(async () => {
+  try {
     // Initialize argParser, this is here because -v and -h shouldn't spam the ascii text
     const { type, name } = argParser.parseArgs();
 
@@ -26,7 +26,7 @@ try {
     // The work
     spinner.start();
     await copyFiles(dappType, dappName);
-  })();
-} catch (err) {
-  console.log(chalk.red.bold(err));
-}
+  } catch (err) {
+    console.log(chalk.red.bold(err));
+  }
+})();

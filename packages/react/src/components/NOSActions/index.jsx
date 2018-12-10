@@ -1,25 +1,26 @@
 import React from "react";
-import injectSheet from "react-jss";
 import PropTypes from "prop-types";
 import { injectNOS, nosProps } from "@nosplatform/api-functions/lib/react";
 
-const styles = {
-  button: {
-    margin: "16px",
-    fontSize: "14px"
-  }
-};
+// const styles = {
+//   button: {
+//     margin: "16px",
+//     fontSize: "14px"
+//   }
+// };
 
 class NOSActions extends React.Component {
   handleAlert = async func => alert(await func);
 
   // handleGetAddress = async () => alert(await this.props.nos.getAddress());
 
-  handleClaimGas = () =>
-    this.props.nos
+  handleClaimGas = () => {
+    const { nos } = this.props;
+    nos
       .claimGas()
       .then(alert)
       .catch(alert);
+  };
 
   render() {
     const { classes, nos } = this.props;
@@ -51,36 +52,27 @@ class NOSActions extends React.Component {
 
     return (
       <React.Fragment>
-        <button className={classes.button} onClick={() => this.handleAlert(nos.getAddress())}>
+        <button type="button" className={classes.button} onClick={() => this.handleAlert(nos.getAddress())}>
           Get Address
         </button>
-        <button
-          className={classes.button}
-          onClick={() => this.handleAlert(nos.getBalance({ asset: neo }))}
-        >
+        <button type="button" className={classes.button} onClick={() => this.handleAlert(nos.getBalance({ asset: neo }))}>
           Get NEO Balance
         </button>
-        <button
-          className={classes.button}
-          onClick={() => this.handleAlert(nos.getBalance({ asset: gas }))}
-        >
+        <button type="button" className={classes.button} onClick={() => this.handleAlert(nos.getBalance({ asset: gas }))}>
           Get GAS Balance
         </button>
-        <button
-          className={classes.button}
-          onClick={() => this.handleAlert(nos.getBalance({ asset: rpx }))}
-        >
+        <button type="button" className={classes.button} onClick={() => this.handleAlert(nos.getBalance({ asset: rpx }))}>
           Get RPX Balance
         </button>
 
-        <button className={classes.button} onClick={this.handleClaimGas}>
+        <button type="button" className={classes.button} onClick={this.handleClaimGas}>
           Claim Gas
         </button>
-        <button className={classes.button} onClick={() => this.handleAlert(nos.send(send))}>
+        <button type="button" className={classes.button} onClick={() => this.handleAlert(nos.send(send))}>
           Send GAS to...
         </button>
 
-        <button className={classes.button} onClick={() => this.handleAlert(nos.testInvoke(invoke))}>
+        <button type="button" className={classes.button} onClick={() => this.handleAlert(nos.testInvoke(invoke))}>
           TestInvoke
         </button>
         {/*
@@ -91,10 +83,7 @@ class NOSActions extends React.Component {
             Invoke
           </button>
         */}
-        <button
-          className={classes.button}
-          onClick={() => this.handleAlert(nos.getStorage(getStorage))}
-        >
+        <button type="button" className={classes.button} onClick={() => this.handleAlert(nos.getStorage(getStorage))}>
           GetStorage
         </button>
       </React.Fragment>
@@ -107,4 +96,4 @@ NOSActions.propTypes = {
   nos: nosProps.isRequired
 };
 
-export default injectNOS(injectSheet(styles)(NOSActions));
+export default injectNOS(NOSActions);

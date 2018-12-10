@@ -7,7 +7,7 @@ const ascii = (message, font = "Standard") =>
       {
         font: font,
         horizontalLayout: "default",
-        verticalLayout: "default"
+        verticalLayout: "default",
       },
       (err, data) => {
         if (err) reject(err);

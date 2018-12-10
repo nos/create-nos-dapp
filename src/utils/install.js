@@ -53,19 +53,12 @@ const install = async directory => {
   if (useYarn) {
     command = "yarn";
   } else if (!checkThatNpmCanReadCwd()) {
-    throw new Error(
-      "npm could not read cwd. This is probably caused by a misconfigured " +
-        "system terminal shell."
-    );
+    throw new Error("npm could not read cwd. This is probably caused by a misconfigured " + "system terminal shell.");
   }
 
-  await execa(command, args, { cwd: directory, stdio: "inherit" }).catch(
-    error => {
-      throw new Error(
-        `${command} ${args.join(" ")} exited with code ${error.code}`
-      );
-    }
-  );
+  await execa(command, args, { cwd: directory, stdio: "inherit" }).catch(error => {
+    throw new Error(`${command} ${args.join(" ")} exited with code ${error.code}`);
+  });
 };
 
 export default install;

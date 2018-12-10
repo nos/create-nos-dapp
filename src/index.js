@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import "@babel/polyfill";
 
 import chalk from "chalk";
@@ -17,7 +15,9 @@ import { copyFiles, getType, getName } from "./steps";
     console.log(chalk.green(asciiText));
 
     // Check if updates are available
-    updateNotifier();
+    if (process.env.NODE_ENV !== "development") {
+      updateNotifier();
+    }
 
     // Get arguments
     const dappType = await getType(type);

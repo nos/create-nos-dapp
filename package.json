@@ -8,30 +8,44 @@
     "create-nos-dapp": "lib/index.js"
   },
   "scripts": {
-    "start": "node lib/index.js",
-    "build": "rimraf lib && ./node_modules/.bin/babel src -d lib"
+    "precommit": "yarn lint && yarn build && git add .",
+    "predev": "yarn build",
+    "lint": "eslint src/**/*.js",
+    "start": "cross-env NODE_ENV=production node lib/index.js",
+    "dev": "cross-env NODE_ENV=development node lib/index.js",
+    "build": "rimraf lib && ./node_modules/.bin/babel src --out-dir lib",
+    "test": "jest"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0-beta.46",
-    "argparse": "^1.0.10",
-    "chalk": "^2.4.1",
-    "execa": "^0.10.0",
-    "figlet": "^1.2.0",
-    "fs-extra": "^5.0.0",
-    "inquirer": "^5.2.0",
-    "ora": "^2.1.0",
-    "rimraf": "^2.6.2",
-    "update-notifier": "^2.5.0"
+    "@babel/polyfill": "7.0.0",
+    "argparse": "1.0.10",
+    "chalk": "2.4.1",
+    "execa": "1.0.0",
+    "figlet": "1.2.0",
+    "fs-extra": "7.0.0",
+    "inquirer": "6.2.0",
+    "ora": "3.0.0",
+    "rimraf": "2.6.2",
+    "update-notifier": "2.5.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.46",
-    "@babel/core": "^7.0.0-beta.46",
-    "@babel/preset-env": "^7.0.0-beta.46",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.0",
-    "babel-eslint": "^8.2.3",
-    "eslint": "^4.19.1",
-    "prettier": "^1.12.1"
+    "@babel/cli": "7.2.0",
+    "@babel/core": "7.2.0",
+    "@babel/preset-env": "7.2.0",
+    "babel-eslint": "10.0.1",
+    "babel-jest": "23.6.0",
+    "cross-env": "5.2.0",
+    "eslint": "5.10.0",
+    "eslint-config-prettier": "3.3.0",
+    "eslint-plugin-node": "8.0.0",
+    "eslint-plugin-prettier": "3.0.0",
+    "husky": "0.14.3",
+    "jest": "23.6.0",
+    "mock-stdin": "0.3.1",
+    "prettier": "1.15.3"
+  },
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
   },
   "repository": {
     "type": "git",
@@ -51,5 +65,14 @@
   "bugs": {
     "url": "https://github.com/nos/create-nos-dapp/issues"
   },
-  "homepage": "https://github.com/nos/create-nos-dapp#readme"
+  "homepage": "https://github.com/nos/create-nos-dapp#readme",
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/packages/"
+    ],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  }
 }

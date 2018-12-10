@@ -5,14 +5,14 @@ const argParser = new ArgumentParser({
   addHelp: true,
   description: "create-nos-dapp",
   usage: "create-nos-dapp [-h] [-v] [-t TYPE] [-n NAME]",
-  version
+  version,
 });
 
 argParser.addArgument(["-t", "--type"], {
-  help: "Template type (react/vanilla/vue)"
+  help: "Template type (react/vanilla/vue)",
 });
 argParser.addArgument(["-n", "--name"], {
-  help: "Project name, f.e. my-nos-dapp"
+  help: "Project name, f.e. my-nos-dapp",
 });
 
 export default argParser;

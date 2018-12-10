@@ -1,6 +1,20 @@
 {
   "parser": "babel-eslint",
-  "extends": [
-    "plugin:prettier/recommended"
-  ]
+  "plugins": ["node", "prettier"],
+  "extends": ["eslint:recommended", "plugin:node/recommended", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "max-len": ["error", { "code": 125, "ignoreUrls": true }],
+    "node/exports-style": ["error", "module.exports"],
+    "node/no-unsupported-features": ["off"],
+    "node/no-unsupported-features/es-syntax": ["off"],
+    "node/no-unpublished-require": ["off"],
+    "import/no-dynamic-require": ["off"],
+    "consistent-return": ["off"],
+    "array-callback-return": "off",
+    "no-underscore-dangle": "off",
+    "no-process-exit": "off",
+    "no-console": "off",
+    "no-useless-escape": "off"
+  }
 }

@@ -8,13 +8,7 @@ const notifyUpdate = () => {
 
   if (notifier.update) {
     console.log(chalk.green.bold(`Update available!`));
-    console.log(
-      chalk.green.bold(
-        `Please update to the latest version (${
-          notifier.update.latest
-        }) to continue`
-      )
-    );
+    console.log(chalk.green.bold(`Please update to the latest version (${notifier.update.latest}) to continue`));
     console.log(
       chalk.green.bold(
         "You can do this using 'npm i -g @nosplatform/create-nos-dapp'" +

@@ -6,7 +6,7 @@ const name = {
   validate: value => {
     if (value.match(/^[a-zA-Z_\-]+$/)) return true;
     return "Please enter a valid project name";
-  }
+  },
 };
 
 export default name;

@@ -8,7 +8,9 @@
     "lint": "eslint 'src/**/*.js*'",
     "start": "parcel src/index.html --no-hmr",
     "test": "jest --all --verbose --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "test:local": "jest --all --verbose --coverage"
+    "test:local": "jest --all --verbose --coverage",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -42,7 +44,8 @@
     "prop-types": "15.6.1",
     "react": "16.3.1",
     "react-dom": "16.3.3",
-    "react-jss": "8.4.0"
+    "react-jss": "8.4.0",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
@@ -90,5 +93,6 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "snyk": true
 }

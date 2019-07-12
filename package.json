@@ -14,7 +14,9 @@
     "start": "cross-env NODE_ENV=production node lib/index.js",
     "dev": "cross-env NODE_ENV=development node lib/index.js",
     "build": "rimraf lib && ./node_modules/.bin/babel src --out-dir lib",
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@babel/polyfill": "7.0.0",
@@ -26,7 +28,8 @@
     "inquirer": "6.2.0",
     "ora": "3.0.0",
     "rimraf": "2.6.2",
-    "update-notifier": "2.5.0"
+    "update-notifier": "2.5.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@babel/cli": "7.2.0",
@@ -74,5 +77,6 @@
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     }
-  }
+  },
+  "snyk": true
 }
